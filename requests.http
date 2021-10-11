@@ -1,0 +1,30 @@
+@endpoint = http://localhost:8888/api
+
+GET {{endpoint}}/getLinks
+
+###
+
+POST {{endpoint}}/createLink
+Content-Type: application/json
+
+{
+    "url": "https://www.brettdoyle.com",
+    "name": "Brett D",
+    "description": "Here is the description"
+}
+
+###
+
+PUT {{endpoint}}/updateLink
+
+Content-Type: application/json
+
+{
+    "url": "https://www.brettdoyle.com",
+    "_id": "312099993114640448",
+    "name": "Brett D Updated LINK",
+    "description": "Here is the description",
+    "archived": false
+}
+
+###
