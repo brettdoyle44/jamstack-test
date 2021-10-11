@@ -1,4 +1,4 @@
-@endpoint = http://localhost:8888/api
+@endpoint = http://localhost:8888/.netlify/functions
 
 GET {{endpoint}}/getLinks
 
